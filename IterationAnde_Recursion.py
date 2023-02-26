@@ -1,6 +1,6 @@
 def factorial_recursive(num):#intersting but effective way to write the fatorial code
     if num == 0 or num == 1:
-        return 1
+        return 1 #stops loop
     else:
         return num * factorial_recursive(num - 1)
 
@@ -10,7 +10,7 @@ def factorial_iterative(num):
         fact = number * fact
     return fact
  
-def main(): #there is a shorter way to write the code as we saw in the Zoom meeting, but I like seeing how this code is "manually" run.
+def main(): #there is a shorter way to write the code shown in the Zoom meeting, but I like seeing how this code is "manually" run.
     print ("Factorial results using an interative function")
     print("0! =", factorial_iterative(0))
     print("5! =", factorial_iterative(5))
